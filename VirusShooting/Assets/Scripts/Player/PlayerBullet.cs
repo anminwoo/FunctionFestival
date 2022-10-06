@@ -29,12 +29,9 @@ public class PlayerBullet : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Enemy")
-        {
-            var enemyInstance = GetComponent<Enemy>();
-            enemyInstance.hp -= GameManager.instance.damage;
-        }
+        if (!other.gameObject.CompareTag("Enemy")) return;
+        Destroy(this);
     }
 }
