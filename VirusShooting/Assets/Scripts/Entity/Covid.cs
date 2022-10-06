@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
 using Random = System.Random;
 
@@ -21,7 +22,10 @@ public class Covid : Enemy
     
     void Update()
     {
-        
+        if (hp <= 0)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 
     void OneShoot()
