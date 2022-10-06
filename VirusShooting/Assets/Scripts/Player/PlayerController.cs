@@ -67,12 +67,12 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            Enemy enemyInstane = other.GetComponent<Enemy>();
+            Enemy enemyInstance = other.GetComponent<Enemy>();
             if (!GameManager.instance.isShield && !GameManager.instance.isUndamageCheat)
             {
-                GameManager.instance.Damage(enemyInstane.damage / 2);
+                GameManager.instance.Damage(enemyInstance.damage / 2);
             }
-            GameManager.instance.ScoreUp(enemyInstane.score);
+            GameManager.instance.ScoreUp(enemyInstance.score);
             Destroy(other.gameObject);
         }
 
