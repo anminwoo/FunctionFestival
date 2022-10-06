@@ -76,7 +76,7 @@ public class Enemy : MonoBehaviour
         transform.Translate(Vector3.down * speed * Time.deltaTime);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
@@ -86,7 +86,7 @@ public class Enemy : MonoBehaviour
         }
         else if (other.gameObject.tag == "PlayerBullet")
         {
-            hp -= GameManager.instance.damage;
+            GetDamage(GameManager.instance.damage);
             if (hp <= 0)
             {
                 GameManager.instance.ScoreUp(score);
@@ -100,5 +100,10 @@ public class Enemy : MonoBehaviour
     private void OnBecameInvisible()
     {
         Destroy(gameObject);
+    }
+
+    public void GetDamage(int damage)
+    {
+        hp -= damage;
     }
 }
