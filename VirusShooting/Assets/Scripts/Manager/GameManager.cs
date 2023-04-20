@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     public GameObject redBlood;
     public GameObject whiteBlood;
 
+    public List<(string, int)> userInfo =  new List<(string, int)>();
 
     private void Awake()
     {
@@ -44,6 +45,8 @@ public class GameManager : MonoBehaviour
         }
 
         instance = this;
+        
+        DontDestroyOnLoad(gameObject);
     }
 
     void Start()

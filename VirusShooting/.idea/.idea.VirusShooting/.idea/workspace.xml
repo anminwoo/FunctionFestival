@@ -3,21 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2b70a2ad-328c-4b12-81ce-06328d1e9540" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VirusShooting/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VirusShooting/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LeaderBoard.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LeaderBoard.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stage1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Stage1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stage2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Stage2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity/Covid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entity/Covid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeaderBoard.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LeaderBoard.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Manager/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/WhiteBlood.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/WhiteBlood.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Parents/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Parents/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/mapScroll.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/mapScroll.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +18,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Manager/RankingManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -93,7 +83,7 @@
       <workItem from="1649206700056" duration="23957000" />
       <workItem from="1649288544144" duration="7662000" />
       <workItem from="1664878293830" duration="2580000" />
-      <workItem from="1681984338417" duration="2160000" />
+      <workItem from="1681984338417" duration="5059000" />
     </task>
     <servers />
   </component>
