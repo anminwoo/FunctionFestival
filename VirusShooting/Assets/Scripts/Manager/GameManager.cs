@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         hp = 100;
-        pain = 10;
+        pain = 0;
         playerScore = 0;
         bulletLevel = 1;
         damage = bulletLevel * 10;
@@ -88,14 +88,11 @@ public class GameManager : MonoBehaviour
 
     public void ReducePain(int reducePain)
     {
-        if (pain - reducePain <= 0)
+        pain -= reducePain;
+        if (pain <= 0)
         {
             pain = 0;
-            painText.text = "Pain" + pain + "%";
-            return;
         }
-
-        pain -= reducePain;
         painText.text = "Pain" + pain + "%";
     }
 
@@ -106,7 +103,7 @@ public class GameManager : MonoBehaviour
             hp = 0;
             hpText.text = "Hp" + hp + "%";
             hpSlider.value = hp;
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene(4);
         }
         else
         {

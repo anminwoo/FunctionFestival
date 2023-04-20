@@ -40,6 +40,7 @@ public class WhiteBlood : MonoBehaviour
         {
             Instantiate(items[UnityEngine.Random.Range(0, 6)], transform.position, transform.rotation);
             Destroy(other.gameObject);
+            Destroy(gameObject);
         }
     }
 

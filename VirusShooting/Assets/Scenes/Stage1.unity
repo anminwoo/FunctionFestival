@@ -688,6 +688,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1005960387524625224, guid: 88f8ede249a0a4346a00f988b2b162ed, type: 3}
+      propertyPath: sceneNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005960387524625224, guid: 88f8ede249a0a4346a00f988b2b162ed, type: 3}
       propertyPath: enemies.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -1752,7 +1756,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 100
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

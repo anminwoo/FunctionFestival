@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     public int score;
     public float fireRate;
     public float nextFire;
+    public bool isDie;
 
     public GameObject enemyBullet;
 
@@ -80,20 +81,19 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            if(!GameManager.instance.isShield && !GameManager.instance.isUndamageCheat)
-            GameManager.instance.Damage(damage);
-            Destroy(gameObject);
+            if (!GameManager.instance.isShield && !GameManager.instance.isUndamageCheat)
+                GameManager.instance.Damage(damage);
         }
         else if (other.gameObject.tag == "PlayerBullet")
         {
             GetDamage(GameManager.instance.damage);
-            if (hp <= 0)
-            {
-                GameManager.instance.ScoreUp(score);
-                Destroy(other.gameObject);
-                Destroy(gameObject);
-            }
             Destroy(other.gameObject);
+        }
+        if (hp <= 0)
+        {
+            GameManager.instance.ScoreUp(score);
+            isDie = true;
+            Destroy(gameObject);
         }
     }
 

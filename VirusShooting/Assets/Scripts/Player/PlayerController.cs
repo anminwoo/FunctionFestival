@@ -72,8 +72,6 @@ public class PlayerController : MonoBehaviour
             {
                 GameManager.instance.Damage(enemyInstance.damage / 2);
             }
-            GameManager.instance.ScoreUp(enemyInstance.score);
-            Destroy(other.gameObject);
         }
 
         else if (other.gameObject.tag == "Item")

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -9,6 +10,9 @@ using Random = System.Random;
 public class Covid : Enemy
 {
     public Enemy[] enemies;
+
+    public int sceneNumber;
+    
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -19,13 +23,11 @@ public class Covid : Enemy
         score = 10000;
         StartCoroutine(Patterns());
     }
-    
-    void Update()
+
+    private void OnDestroy()
     {
-        if (hp <= 0)
-        {
-            SceneManager.LoadScene(2);
-        }
+        if(isDie == true)
+            SceneManager.LoadScene(sceneNumber);
     }
 
     void OneShoot()
