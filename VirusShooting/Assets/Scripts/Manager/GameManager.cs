@@ -35,8 +35,6 @@ public class GameManager : MonoBehaviour
     public GameObject redBlood;
     public GameObject whiteBlood;
 
-    public List<(string, int)> userInfo =  new List<(string, int)>();
-
     private void Awake()
     {
         if (instance != null)
